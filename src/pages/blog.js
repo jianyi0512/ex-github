@@ -8,7 +8,13 @@ const Blog = (props) => {
 export default Blog
 
 export async function getStaticProps() {
-    const testText = "Next.jsポートフォリオサイト"
+    const blog = ((context) => {
+        const keys = context.keys()
+        const values = keys.map(context)
+        console.log(values)
+
+    })(require.context('../data', true, /\.md$/))
+
     return {
         props: {
             test:testText
