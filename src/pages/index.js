@@ -6,6 +6,7 @@ const Index = () => {
     <div>
       <h1 className={style.h1Text}>こんにちは</h1>
       <Link href="/contact"><a>Contactページへ移動</a></Link>
+      <Link href="/blog"><a>Contactページへ移動</a></Link>
     </div>
   )
 }
